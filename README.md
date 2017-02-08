@@ -4,6 +4,7 @@ This repository is made for rpi3 ble programming.
 
 The original release was cloned from
     noble : https://github.com/sandeepmistry/noble
+    
     bluepy : https://github.com/IanHarvey/bluepy
     
 ## LICENCE
@@ -18,7 +19,7 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-## bluepy
+### bluepy
 
 This project uses code from the bluez project, which is available under the Version 2 of the GNU Public License.
 

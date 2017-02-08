@@ -1,3 +1,7 @@
+//
+// Created by JohnBae on 2017-02-08.
+//
+
 var noble = require('noble')
 var async = require('async')
 var readline = require('readline')
@@ -145,24 +149,3 @@ function communicate() {
         }
     });
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

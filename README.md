@@ -1,6 +1,6 @@
 # ble
 
-This repository is made for rpi3 ble programming.
+This repository is made for RPi3 BLE programming.
 
 The original release was cloned from
 

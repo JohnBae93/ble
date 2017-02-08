@@ -3,8 +3,11 @@
 This repository is made for rpi3 ble programming.
 
 The original release was cloned from
-    noble : https://github.com/sandeepmistry/noble
-    bluepy : https://github.com/IanHarvey/bluepy
+
+## noble 
+    https://github.com/sandeepmistry/noble
+## bluepy
+    https://github.com/IanHarvey/bluepy
     
 ## LICENCE
 

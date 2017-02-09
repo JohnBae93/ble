@@ -2,6 +2,8 @@
 
 This repository is made for RPi3 BLE programming.
 
+This include scanning, connecting, writing, notification, etc.
+
 The original release was cloned from
 
 noble : https://github.com/sandeepmistry/noble

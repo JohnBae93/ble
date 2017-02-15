@@ -9,6 +9,8 @@ The original release was cloned from
 noble : https://github.com/sandeepmistry/noble
 
 bluepy : https://github.com/IanHarvey/bluepy
+
+script of DUET2 : http://smardi.com/wiki/doku.php?id=duet:protocol
     
 ## LICENCE
 

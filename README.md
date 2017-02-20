@@ -12,7 +12,7 @@ bluepy : https://github.com/IanHarvey/bluepy
 
 script of DUET2 : http://smardi.com/wiki/doku.php?id=duet:protocol
 
-### duet2: noble_duet2.js + advt_duet2.js => ble_duet2.js
+### duet2 : noble_connect_duet2.js + noble_advt_duet2.js => noble_duet2.js
     
 ## LICENCE
 

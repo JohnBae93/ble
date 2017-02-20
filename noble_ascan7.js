@@ -3,7 +3,6 @@
 //
 
 var noble = require('noble')
-var async = require('async')
 var readline = require('readline')
 
 var myAddress = '98072d8b8493';
@@ -97,7 +96,7 @@ function communicate() {
             console.log("[SUCCESS]send 'H' to " + myName);
 
             commandNotiChar.notify(true);
-            commandNotiChar.on('read', function(data, notification) {
+            commandNotiChar.on('data', function(data, notification) {
                 if(notification) {
                     /*
                     *	If user press button in device, device send 6 to RPi and input stream is opened.
@@ -134,7 +133,7 @@ function communicate() {
                         console.log("[SUCCESS]send 'S' to " + myName);
 
                         sensorNotiChar.notify(true);
-                        sensorNotiChar.on('read', function(data, notification) {
+                        sensorNotiChar.on('data', function(data, notification) {
                             if(notification) {
                                 console.log("[NOTIFY]sensor value : " + data.readUInt8(0));
                             }

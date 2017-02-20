@@ -1,6 +1,3 @@
-/*
- * Created on 16/02/17.
- */
 var Bleacon = require('bleacon');
 var noble = require('noble');
 

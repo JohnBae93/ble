@@ -6,12 +6,12 @@
  *          bleacon.peripheral = peripheral
  *	to bleacon.js
  */
-
 var Bleacon = require('bleacon');
 var noble = require('noble');
 var readline = require('readline')
 
 var myName = 'DUET2';
+
 var serviceUuid = '6e400001b5a3f393e0a9e50e24dcca9e';
 var writeUuid = '6e400002b5a3f393e0a9e50e24dcca9e';
 var NotifyUuid = '6e400003b5a3f393e0a9e50e24dcca9e';
@@ -53,6 +53,8 @@ Bleacon.on('discover', function(bleacon) {
 	var proximity = bleacon.proximity;
 	var name = bleacon.name;
 	var peripheral = bleacon.peripheral;
+	
+	console.log("[ADVERTISEMENT]");
 	
 	console.log("Mac add : " + addr );
 	console.log("name : " + name);	
@@ -183,8 +185,10 @@ function onNotification(data, notification) {
 			var start_first = Math.floor(start/256);
 			var start_second = start%256;
 
-			if(numOfData <= start)
+			if(numOfData <= start) {
+				console.log("[END]program");
 				process.exit(0);
+			}
 			else
 				getDataVal(start_first, start_second);
 		}

@@ -1,5 +1,4 @@
 var noble = require('noble')
-var async = require('async')
 var readline = require('readline')
 
 var myAddress = 'c45f59140d72';
@@ -80,7 +79,7 @@ noble.on('discover', function (peripheral) {
               })
 
               if (writeChar && NotifyChar) {
-                NotifyChar.on('read', onNotification);
+                NotifyChar.on('data', onNotification);
                 getDataNum();
               }
             })

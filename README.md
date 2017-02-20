@@ -2,7 +2,7 @@
 
 This repository is made for RPi3 BLE programming.
 
-This include scanning, connecting, writing, notification, etc.
+This include advertisement, scanning, connecting, writing, notification, etc.
 
 The original release was cloned from
 

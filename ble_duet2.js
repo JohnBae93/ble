@@ -1,16 +1,17 @@
-/**
- * Created by pi on 16/02/17.
+/*
+ * Created on 16/02/17.
+ * 	you should insert 
+ *          bleacon.name = peripheral.advertisement.localNmae
+ *	    bleacon.addr = peripheral.id
+ *          bleacon.peripheral = peripheral
+ *	to bleacon.js
  */
-/**
- * Created by pi on 15/02/17.
- */
+
 var Bleacon = require('bleacon');
 var noble = require('noble');
-var async = require('async');
 var readline = require('readline')
 
-var myAddr = 'e77d81eb1291';
-
+var myName = 'DUET2';
 var serviceUuid = '6e400001b5a3f393e0a9e50e24dcca9e';
 var writeUuid = '6e400002b5a3f393e0a9e50e24dcca9e';
 var NotifyUuid = '6e400003b5a3f393e0a9e50e24dcca9e';
@@ -52,36 +53,19 @@ Bleacon.on('discover', function(bleacon) {
 	var proximity = bleacon.proximity;
 	var name = bleacon.name;
 	var peripheral = bleacon.peripheral;
-	if(addr)
-		console.log("Mac add : " + addr );
+	
+	console.log("Mac add : " + addr );
+	console.log("name : " + name);	
+	console.log("uuid : " + uuid);	
+	console.log("major : " + major);	
+	console.log("heart : " + heart);
+	console.log("fall : " + fall);		
+	console.log("measuredPower : " + measuredPower);	
+	console.log("rssi : " + rssi);	
+	console.log("accuracy : " + accuracy);
+	console.log("proximity : " + proximity);
 
-	if(name)
-		console.log("name : " + name);
-
-	if(uuid)
-		console.log("uuid : " + uuid);
-
-	if(major)
-		console.log("major : " + major);
-
-	if(minor) {
-		console.log("heart : " + heart);
-		console.log("fall : " + fall);
-	}
-
-	if(measuredPower)
-		console.log("measuredPower : " + measuredPower);
-
-	if(rssi)
-		console.log("rssi : " + rssi);
-
-	if(accuracy)
-		console.log("accuracy : " + accuracy);
-
-	if(proximity)
-		console.log("proximity : " + proximity);
-
-	if(heart > 10 && (peripheral.id === myAddr || peripheral.address === myAddr)) {
+	if(heart > 10 && name == myName) {
 		noble.stopScanning();
 		connect(peripheral);
 	}
@@ -111,7 +95,7 @@ function connect(peripheral){
 						})
 
 						if (writeChar && NotifyChar) {
-							NotifyChar.on('read', onNotification);
+							NotifyChar.on('data', onNotification);
 							getDataNum();
 						}
 					})

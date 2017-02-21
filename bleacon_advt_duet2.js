@@ -1,5 +1,4 @@
 var Bleacon = require('bleacon');
-var noble = require('noble');
 
 var uuid1 = '010001720d14595fc40a0201050609'
 var uuid2 = '5fc41211079ecadc240ee5a9e093f3a3'

@@ -11,7 +11,7 @@ var noble = require('noble');
 var readline = require('readline');
 var request = require('request');
 
-var uri = 'http://115.145.202.11/test/msp/gather.php';
+var uri = 'http://yourwebsite.com';
 
 var serviceUuid = '6e400001b5a3f393e0a9e50e24dcca9e';
 var writeUuid = '6e400002b5a3f393e0a9e50e24dcca9e';

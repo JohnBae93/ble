@@ -2,21 +2,23 @@
 
 This repository is made for RPi3 BLE programming.
 
-This include advertisement, scanning, connecting, writing, notification, etc.
+This include advertisement, scanning, connecting, writing, notification, post rquest etc.
 
 The original release was cloned from
 
 noble : https://github.com/sandeepmistry/noble
 
+bleacon : https://github.com/sandeepmistry/node-bleacon
+
 bluepy : https://github.com/IanHarvey/bluepy
 
 script of DUET2 : http://smardi.com/wiki/doku.php?id=duet:protocol
 
-### duet2 : noble_connect_duet2.js + noble_advt_duet2.js => noble_duet2.js
+### duet2 : noble_connect_duet2.js + bleacon_advt_duet2.js => noble_bleacon_duet2.js
     
 ## LICENCE
 
-### noble
+### noble, bleacon
 
 Copyright (C) 2015 Sandeep Mistry sandeep.mistry@gmail.com
 
